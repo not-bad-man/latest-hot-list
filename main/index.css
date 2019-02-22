@@ -1,0 +1,117 @@
+html, body, div, ul, li, span {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+body {
+   height: 100vh;
+   width: 100vw;
+   background: #ccc;
+   display: inline-block;
+}
+
+.wrapper {
+   width: 400px;
+   padding: 10px;
+   margin: 50px auto;
+   background-color: white;
+   border: 1px solid black;
+}
+
+.head {
+   height: 30px;
+}
+.head:after {
+   content: "";
+   display: block;
+   clear: both;
+   overflow: hidden;
+}
+
+.left {
+   float: left;
+   line-height: 30px;
+   font-size: 18px;
+}
+
+.right {
+   float: right;
+}
+.right span {
+   font-size: 18px;
+   line-height: 30px;
+   vertical-align: center;
+}
+.right span.icon {
+   display: inline-block;
+   height: 18px;
+   width: 18px;
+   background-image: url(https://www.baidu.com/aladdin/tpl/right_toplist1/refresh.png);
+   background-size: 100% 100%;
+   cursor: pointer;
+}
+
+.body {
+   margin-top: 20px;
+}
+
+.body ul li {
+   height: 30px;
+   border-bottom: 1px solid black;
+}
+.body ul li:after {
+   content: "";
+   display: block;
+   clear: both;
+   overflow: hidden;
+}
+
+.body li.tpl {
+   display: none;
+}
+
+.body ul li .title {
+   float: left;
+}
+.body ul li .title .index {
+   display: inline-block;
+   margin-right: 5px;
+   height: 20px;
+   width: 20px;
+   line-height: 20px;
+   text-align: center;
+   background: skyblue;
+}
+.body ul li .title .index.first {
+   background: #f54545;
+}
+.body ul li .title .index.second {
+   background: #ff8547;
+}
+.body ul li .title .index.third {
+   background:#ffac38;
+}
+
+.body ul li .count {
+   float: right;
+}
+.body ul li .count .count-num {
+   font-size: 18px;
+   line-height: 30px;
+   vertical-align: center;
+   margin-right: 5px;
+}
+.body ul li .count .count-tend {
+   display: inline-block;
+   height: 18px;
+   width: 10px;
+   background-size: 100% 100%;
+}
+.body ul li .count .count-tend.up {
+   background-image: url(../img/up.PNG);
+}
+.body ul li .count .count-tend.down {
+   background-image: url(../img/down.PNG);
+}
+
